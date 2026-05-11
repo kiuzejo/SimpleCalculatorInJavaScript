@@ -1,0 +1,91 @@
+body{  
+    padding: 0px;
+    margin: 0px;
+    height: 100vh;
+    background-image: linear-gradient(30deg,  rgb(107, 99, 255), rgb(0, 255, 251));
+}
+
+.background{
+    height: 100vh;
+    width: 100vw;
+    
+
+}
+
+#tela{
+    background-color: rgba(0, 141, 23, 0.735);
+    margin-top: 0px;
+    width: 24vw;
+    height: 2rem;
+    white-space: nowrap;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 0.3em;
+    font-size: 1.1em;
+}
+
+.calculadora{
+    background-color: hsla(0, 0%, 0%, 0.782);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 34vw;
+    height: 52vh;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    align-items: center;
+    gap: 1vh;
+    border-radius: 3em;
+}
+
+.titulo2{
+    text-align: center;
+}
+
+.titulo1{
+    color: aliceblue;
+
+}
+
+.boton_table{
+    width: 25vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0.6vw;
+    place-items: center;
+}
+
+.numero{
+    background-color: rgba(0, 0, 0, 0.677);
+    width: 5vw;
+    height: 5vh;
+    color:aliceblue;
+    border-color: rgba(0, 141, 23, 0.735);
+    border-radius: 1vw;
+    font-size: 0.9em;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.numero:hover{
+    background-color: rgba(0, 39, 156, 0.677);
+}
+
+.cero{
+  
+    grid-column: span 2;
+    width: 10vw;
+}
+
+.igual{
+    grid-row: span 2;
+    height: 9vh;
+}
